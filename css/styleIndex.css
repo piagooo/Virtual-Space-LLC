@@ -242,6 +242,7 @@ footer p{
     padding-top: 15px;
     padding-bottom: 15px;
     position: fixed; left: 30px; top: 25px;
+    cursor: pointer;
 }
 
 a:link {
