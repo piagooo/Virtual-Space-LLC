@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../js/carruselIndex.js"></script>
+
+  
+</head>
+
+<body>
+    <button id="cerrarPagina" onclick="cerrarPagina()">x</button>
+    <!-- Botón Dark Mode -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">
+        <i class="fas fa-moon" id="darkModeIcon"></i>
+    </button>
+<!--imagen1 -->
+<br id="imagen1section2">
+    <div class="seccion1" >
+        <img src="/images/S2/Y2.JPG" alt="Imagen 1">
+        <img src="/images/S2/Y2.1.JPG" alt="Imagen 2">
+        <div class="descripcion">
+            <h4>
+                
+            </h4>
+            
+        </div>
+    </div>
+
+    <div class="linea2" id="imagen2section2"></div>
+<!--fin imagen1 -->
+
+<!--imagen2 -->
+    <div class="seccion1" >
+        <img src="/images/S2/Y2.2.JPG" alt="Imagen 2">
+        <img src="/images/S2/Y2.3.JPG" alt="Imagen 2">
+        <div class="descripcion">
+            <h4>
+               
+            </h4>
+            
+        </div>
+    </div>
+    <div class="linea2" id="imagen3section2"></div>
+    <!--fin imagen2 -->
+
+    <!--imagen3 -->
+    <div class="seccion1">
+        <img src="/images/S2/Y2.4.JPG" alt="Imagen 2">
+        <div class="descripcion">
+            <h4>
+               
+            </h4>
+           
+        </div>
+    </div>
+    <div class="linea2" id="imagen4section2"></div>
+    <!--fin imagen3 -->
+
+       
+    <!-- Agrega más secciones según sea necesario -->
+
+    <script>
+        function cerrarPagina() {
+            // Cambia 'otraPagina.html' con la ruta correcta de tu otra página
+            window.location.href = '../index.html#section2ps';
+        }
+        function abrirEnlace(url) {
+            window.open(url, '_blank');
+        }
+
+        function abrirRedSocial(url) {
+            window.open(url, '_blank');
+        }
+
+        function toggleDescripcion(idParrafo, idIcono) {
+            var parrafo = document.getElementById(idParrafo);
+            var icono = document.getElementById(idIcono);
+
+            parrafo.classList.toggle('oculto');
+
+            if (parrafo.classList.contains('oculto')) {
+                icono.classList.remove('fas fa-chevron-down');
+                icono.classList.add('fas fa-chevron-up');
+            } else {
+                icono.classList.remove('fas fa-chevron-up');
+                icono.classList.add('fas fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+
+</html>
