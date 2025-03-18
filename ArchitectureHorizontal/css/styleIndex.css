@@ -22,6 +22,8 @@ body {
 
 }
 
+
+
 h4{
     font-family: nunito;
     font-size: 20px;
@@ -37,11 +39,9 @@ body.dark-mode {
     color: #fff;
 }
 
-/* 
-    html{
-        scroll-snap-type: x mandatory;
-    }
-*/
+
+
+
 
 #loadingScreen{
     background-color: #0b033e;
@@ -80,14 +80,14 @@ body.dark-mode {
     padding-top: 50px;
     border-radius: 5px;
     margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
     scroll-snap-align: start;
 }
 
 
 .section img {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
 }
 
@@ -107,10 +107,12 @@ body.dark-mode {
     border-radius: 5px;
     margin-right: 10px;
     border: 2px solid #fff;
+
 }
 
 .horizontal{
-    position: relative; top: 15px;
+    position: relative; 
+    padding-top: 10px;
     margin: auto;
     max-width: 100%;
 }
@@ -135,49 +137,129 @@ body.dark-mode {
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
+@media screen and (max-height:1000px){
+    #logo {
+        width:50px;
+        height:auto;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        position: fixed; left: 50%; top: 5px;
+    }
+    html{
+        scroll-snap-type: x mandatory;
+    }
+
+    .dark-mode-button {
+        position: fixed;
+        top: 25px;
+        right: 50px;
+        padding: 5px;
+        background-color: transparent;
+        color: #858585;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        font-size: 30px;
+        transition: color 0.3s ease;
+    }
+    
+    .dark-mode-button:hover {
+        color: #ccc;
+    }
+    
+    /* Nueva regla CSS para cambiar el color del icono */
+    .dark-mode .dark-mode-button i.fa-moon {
+        color: black;
+    }
+    
+    .dark-mode .dark-mode-button i.fa-sun {
+        color: white;
+    }
+    
+    .dark-mode .audio-container #playPauseIcon {
+        color: white;
+    }
+
+    #idioma{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 50%;
+        border-color: black;
+        background-color: white;
+        opacity: 46%;
+        color: black;
+        font-size: 15px;
+        padding:6px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: fixed; left: 40px; top: 15px;
+        cursor: pointer;
+    }
+
+}
+
+@media only screen and (max-height:700px){
+    #logo {
+        width:50px;
+        height:auto;
+        padding: 0px;
+        padding-top: 0px;
+        padding-bottom: 15px;
+        position: fixed; left: 47%; top: 5px;
+    }
+    html{
+        scroll-snap-type: y mandatory;
+    }
+
+    .dark-mode-button {
+        position: fixed;
+        top: 15px;
+        right: 0px;
+        padding: 5px;
+        background-color: transparent;
+        color: #858585;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
+    
+    .dark-mode-button:hover {
+        color: #ccc;
+    }
+    
+    /* Nueva regla CSS para cambiar el color del icono */
+    .dark-mode .dark-mode-button i.fa-moon {
+        color: black;
+    }
+    
+    .dark-mode .dark-mode-button i.fa-sun {
+        color: white;
+    }
+    
+    .dark-mode .audio-container #playPauseIcon {
+        color: white;
+    }
+    #idioma{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 50%;
+        border-color: black;
+        background-color: white;
+        opacity: 46%;
+        color: black;
+        font-size: 12px;
+        padding:6px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: fixed; left: 10px; top: 10px;
+        cursor: pointer;
+    }
+
+}
   
 
-#logo {
-    width:60px;
-    height:auto;
-    padding: 0px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    position: fixed; left: 50%; top: 5px;
-}
-
-
-
-.dark-mode-button {
-    position: fixed;
-    top: 15px;
-    right: 0px;
-    padding: 5px;
-    background-color: transparent;
-    color: #858585;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
-
-.dark-mode-button:hover {
-    color: #ccc;
-}
-
-/* Nueva regla CSS para cambiar el color del icono */
-.dark-mode .dark-mode-button i.fa-moon {
-    color: black;
-}
-
-.dark-mode .dark-mode-button i.fa-sun {
-    color: white;
-}
-
-.dark-mode .audio-container #playPauseIcon {
-    color: white;
-}
 
 /*Boton audio*/
 
@@ -187,7 +269,7 @@ body.dark-mode {
 
 .audiobtn {
     position: absolute;
-    top: 10px;
+    top: 25px;
     right: 5px;
     padding: 10px;
     background-color: transparent;
@@ -213,34 +295,34 @@ body.dark-mode {
 .dark-mode footer p{
     color:#fff;
 }
+
 footer{
     width: 100%;
-    background:transparent;
+    background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
     height: auto;
     justify-content: center;
     clear: both;
-    position: relative; bottom: 0px;
+    position: absolute;
+    bottom: 0px;
 }
 
-footer h1
-  {
-    padding: 0px;
+footer h1 {
+    padding: 5px;
     text-align: center;
     font-size: 10px;
-    color: #000;
+    color: #fff;
     font-family:nunito;
 }
 footer p{
     text-align: center;
     font-size: 10px;
-    color: #000;
+    color: #fff;
     font-family: nunito;
     z-index: 9999;
 }
-
 .redes{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -256,6 +338,11 @@ footer p{
     opacity: 0;
 }
 
+.caption p{
+    margin: 15px;
+}
+
+
 .caption:hover, .caption:active{
     position: absolute;
     background-color: black;
@@ -266,20 +353,6 @@ footer p{
     display: block;
 }
 
-#idioma{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 50%;
-    border-color: black;
-    background-color: white;
-    opacity: 46%;
-    color: black;
-    font-size: 12px;
-    padding: 6px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: fixed; left: 30px; top: 25px;
-    cursor: pointer;
-}
 
 a:link {
     color: white;
@@ -292,6 +365,5 @@ a:visited {
     background-color: transparent;
     text-decoration: none;
 }
-
 
 
