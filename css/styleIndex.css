@@ -107,7 +107,7 @@ html{
     padding: 0px;
     padding-top: 5px;
     padding-bottom: 15px;
-    position: fixed; left: 45%; top: 5px;
+    position: fixed; left: 50%; top: 5px;
 }
 
 
@@ -203,13 +203,13 @@ footer p{
 
 .redes{
     margin-top: 20px;
-  
     margin-bottom: 20px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+	
   .redes img {
     width: 50px;
     padding: 10px;
