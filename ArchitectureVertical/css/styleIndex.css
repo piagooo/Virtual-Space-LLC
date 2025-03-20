@@ -225,19 +225,22 @@ html{
         cursor: pointer;
     }
     #label_en{
-        position: fixed; left: 50px; top: 35px;
+        position: fixed; left: 65px; top: 35px;
         color:white;
         font-family: nunitobold;
     
     }
     #label_es{
-        position: fixed; left: 50px; top: 55px;
+        position: fixed; left: 65px; top: 65px;
         color:white; 
         font-family: nunitobold;
     }
     
     #English{
-        position: fixed; left: 30px; top: 50px;
+        position: fixed; left: 40px; top: 28px;
+    }
+    #Espanol{
+        position: fixed; left: 40px; top: 58px;
     }
     
 }
