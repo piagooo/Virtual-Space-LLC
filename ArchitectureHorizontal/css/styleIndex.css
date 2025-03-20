@@ -79,7 +79,7 @@ body.dark-mode {
 .section {
     position: relative; 
     width: 80%;
-    height: 80vh;
+    height: 82vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ body.dark-mode {
     color: inherit;
     text-align: center;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 60px;
     border-radius: 5px;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -460,7 +460,31 @@ body.dark-mode {
     color:#fff;
 }
 
+footer{
+    width: 100%;
+    background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
+    height: auto;
+    justify-content: center;
+    clear: both;
+    position: sticky;
+    bottom: 0px;
+}
 
+footer h1
+  {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-family:nunito;
+}
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    font-family: nunito;
+    z-index: 9999;
+}
 
 .caption {
     position: absolute;
