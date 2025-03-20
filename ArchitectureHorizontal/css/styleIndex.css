@@ -40,6 +40,16 @@ body.dark-mode {
 }
 
 
+.caption_ingles{
+    display:none;
+}
+.caption_espanol{
+    display:block;
+}
+
+
+    
+
 
 
 
@@ -138,7 +148,7 @@ body.dark-mode {
     background-color: rgba(0,0,0,0.8);
 }
 
-@media screen and (max-height:1000px){
+@media screen and (max-width:2000px){
     #logo {
         width:50px;
         height:auto;
@@ -153,8 +163,8 @@ body.dark-mode {
 
     .dark-mode-button {
         position: fixed;
-        top: 25px;
-        right: 50px;
+        top: 10px;
+        right: 30px;
         padding: 5px;
         background-color: transparent;
         color: #858585;
@@ -193,9 +203,52 @@ body.dark-mode {
         padding:6px;
         padding-top: 15px;
         padding-bottom: 15px;
-        position: fixed; left: 40px; top: 15px;
+        position: fixed; left: 35px; top: 10px;
         cursor: pointer;
     }
+
+    footer{
+        width: 100%;
+        background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
+        height: auto;
+        justify-content: center;
+        clear: both;
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    footer h1 {
+        padding: 5px;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        font-family:nunito;
+    }
+    footer p{
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        font-family: nunito;
+        z-index: 9999;
+    }
+    .redes{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      .redes img {
+        width: 50px;
+        padding: 10px;
+    }
+    
+    #mobileFooter{
+        display:none;
+    }
+
+   
 
 }
 
@@ -209,7 +262,7 @@ body.dark-mode {
         position: fixed; left: 47%; top: 5px;
     }
     html{
-        scroll-snap-type: y mandatory;
+        scroll-snap-type: x mandatory;
     }
 
     .dark-mode-button {
@@ -256,9 +309,82 @@ body.dark-mode {
         position: fixed; left: 10px; top: 10px;
         cursor: pointer;
     }
+    footer{
+        width: 100%;
+        background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
+        height: auto;
+        justify-content: center;
+        clear: both;
+        position: sticky;
+        bottom: 0px;
+    }
+    
+    footer h1 {
+        padding: 5px;
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        font-family:nunito;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 10px;
+        color: #fff;
+        font-family: nunito;
+        z-index: 9999;
+
+    }
+    .redes{
+        margin-top: 20px;
+        margin-bottom: 0px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+      .redes img {
+        width: 50px;
+        padding: 10px;
+    }
+
+
+    #desktopFooter{
+        display:none;
+    }
+    #mobileFooter{
+        display:block;
+    }
+
+    .section_hz{
+        position: relative; 
+        width: 80%;
+        height: 65vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: inherit;
+        text-align: center;
+        margin: 5;
+        padding-top: 50px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+        scroll-snap-align: start;
+    }
+
+    .section img {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
 
 }
   
+
+
 
 
 /*Boton audio*/
@@ -296,42 +422,7 @@ body.dark-mode {
     color:#fff;
 }
 
-footer{
-    width: 100%;
-    background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
-    height: auto;
-    justify-content: center;
-    clear: both;
-    position: absolute;
-    bottom: 0px;
-}
 
-footer h1 {
-    padding: 5px;
-    text-align: center;
-    font-size: 10px;
-    color: #fff;
-    font-family:nunito;
-}
-footer p{
-    text-align: center;
-    font-size: 10px;
-    color: #fff;
-    font-family: nunito;
-    z-index: 9999;
-}
-.redes{
-    margin-top: 20px;
-    margin-bottom: 0px;
-    max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-  .redes img {
-    width: 50px;
-    padding: 10px;
-}
 
 .caption {
     position: absolute;

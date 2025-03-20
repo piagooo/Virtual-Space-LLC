@@ -14,7 +14,7 @@ $(document).ready(function () {
                     items: 4,
                 },
                 1000: {
-                    items: 5,
+                    items: 10,
                 },
             },
         });
@@ -39,10 +39,6 @@ function toggleDarkMode() {
     darkModeIcon.classList.toggle('fa-sun');
 }
 
-function toggleLanguage(){
-
-
-}
 
 //Switches main picture when you click on icons in carousel
 function switchImage(imgID, biggerPicture){
@@ -68,7 +64,7 @@ function removeLoading(){
 //Display caption on mobile view
 function mobileCaption(){
     const opac = document.getElementById(caption).style.opacity;
-    if(opac == '65%'){
+    if(opac > '0'){
         opac = '0%';
     }
     else{
@@ -98,6 +94,14 @@ function switchLanguage() {
   
     }
      
+}
+
+function toggleLanguage(){
+    var Spanish = document.getElementsByClassName('caption_espanol');
+    var English = document.getElementsByClassName('caption_ingles');
+
+
+
 }
 
   
