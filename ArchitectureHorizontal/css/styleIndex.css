@@ -150,21 +150,21 @@ body.dark-mode {
 
 @media screen and (max-width:2000px){
     #label_en{
-        position: fixed; left: 85px; top: 60px;
+        position: fixed; left: 185px; top: 70px;
         color:white;
         font-family: nunitobold; 
     }
     #label_es{
-        position: fixed; left: 85px; top: 85px;
+        position: fixed; left: 185px; top: 95px;
         color:white; 
         font-family: nunitobold;
     }
     
     #Espanol{
-        position: fixed; left: 65px; top: 85px;
+        position: fixed; left: 155px; top: 95px;
     }
     #English{
-        position: fixed; left: 65px; top: 60px;
+        position: fixed; left: 155px; top: 70px;
     }
 
     #logo {
