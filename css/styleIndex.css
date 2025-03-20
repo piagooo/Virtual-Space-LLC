@@ -1,4 +1,3 @@
-@media only screen and (max-width: 100vw) {
 body {
     margin: 0;
     padding: 0;
@@ -6,23 +5,38 @@ body {
     color: #000;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 @font-face{
 	font-family: nunito;
 	src: url("../fonts/nunito/nunito-regular.ttf") format("truetype");
-
 }
+
 @font-face{
 	font-family: nunitobold;
 	src: url("../fonts/nunito/nunito-bold.ttf") format("truetype");
-
 }
 
-h4{
+a:link {
+    color:rgb(0, 136, 255);
+    text-decoration: none;
+}
+
+a:hover {
+  color:rgb(0, 6, 121);
+  text-decoration: none;
+}
+  
+a:visited {
+    color:rgb(0, 136, 255);
+    text-decoration: none;
+}
+
+h4 {
     font-family: nunito;
     font-size: 20px;
 }
 
-p{
+p {
     font-family: nunito;
 }
 
@@ -30,7 +44,8 @@ body.dark-mode {
     background-color: #1d1d1d;
     color: #fff;
 }
-html{
+
+html {
     scroll-snap-type: y mandatory;
 }
 
@@ -45,6 +60,7 @@ html{
     justify-content: center;
     transition: opacity 2s ease-out;
 }
+
 #loadingScreen.loaded{
     opacity:0%;
     display: none;
@@ -78,10 +94,11 @@ html{
     #logo {
         width:60px;
         height:auto;
-        padding: 0px;
+        padding: 0px; 
         padding-top: 5px;
         padding-bottom: 15px;
         position: fixed; left: 50%; top: 5px;
+        bottom: 30px;
     }
     
     /*Boton audio*/
@@ -103,6 +120,7 @@ html{
         font-size: 20px;
         transition: color 0.3s ease;
     }
+
     #playPauseIcon{
         color:#999;
     }
@@ -142,6 +160,7 @@ html{
     }
 
 }
+
 @media only screen and (max-height:700px){
     .section {
         position: relative; 
@@ -167,6 +186,7 @@ html{
         padding-top: 5px;
         padding-bottom: 15px;
         position: fixed; left: 47%; top: 30px;
+        bottom: 30px;
     }
 
     /*Boton audio*/
@@ -188,7 +208,7 @@ html{
         font-size: 20px;
         transition: color 0.3s ease;
     }
-    #playPauseIcon{
+    #playPauseIcon {
         color:#999;
     }
 
@@ -196,7 +216,7 @@ html{
     color: #ccc;
     }
 
-    .idioma{
+    .idioma {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         border-radius: 50%;
         border-color: black;
@@ -210,25 +230,23 @@ html{
         position: fixed; left: 30px; top: 25px;
         cursor: pointer;
     }
-    #label_en{
+    #label_en {
         position: fixed; left: 50px; top: 35px;
         color:white;
         font-family: nunitobold;
     
     }
-    #label_es{
+    #label_es {
         position: fixed; left: 50px; top: 55px;
         color:white; 
         font-family: nunitobold;
     }
     
-    #English{
+    #English {
         position: fixed; left: 30px; top: 50px;
     }
     
 }
-
-
 
 .section img {
     width: 100%;
@@ -249,15 +267,12 @@ html{
     width: 65px;
     height: 65px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-right: 10px;
-    border: 2px solid #fff;
-    
-  
+    border: 5px solid none;
+    padding: 5px;
+    background-color: #fff;
 }
-
-
-
 
 .dark-mode-button {
     position: fixed;
@@ -290,17 +305,16 @@ html{
     color: white;
 }
 
-
-
 /*footer*/
 .dark-mode footer h1{
     color:#fff;
 }
+
 .dark-mode footer p{
     color:#fff;
 }
 
-footer{
+.footer {
     width: 100%;
     background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
     height: auto;
@@ -310,25 +324,23 @@ footer{
     bottom: 0px;
 }
 
-footer h1
-  {
+.footer h1 {
     padding: 5px;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     color: #fff;
     font-family:nunito;
 }
-footer p{
+
+.footer p {
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     color: #fff;
     font-family: nunito;
     z-index: 9999;
 }
 
 .redes{
-    margin-top: 20px;
-    margin-bottom: 20px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -355,16 +367,19 @@ footer p{
     display: block;
 }
 
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
+.linea {
+    max-width: 1100px;
+    width: 80%;
+    height: 10px;
+    border-top: 1px solid #999;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
-
+.linea2 {
+    max-width: 1100px;
+    width: 80%;
+    height: 10px;
+    border-top: 2px solid rgb(0, 6, 121);
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
