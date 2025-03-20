@@ -75,6 +75,8 @@
     
     <!-- Seccion 2 -->
     <div class="section" id="section2ps">
+
+
         <div class="audio-container">
             <audio class="audio" id="myAudio2" src="audio/Audio2.m4a"></audio>
 
@@ -102,8 +104,10 @@
             </p>
             <a href="section/section2.html">Leer Mas...</a>
         </div>
+        
         <!--Main Image-->
         <img id ="big-picture2" src="images/S2/Y2.JPG" alt="Imagen 1">
+
     </div>
 
     <!--Carousel of icons-->
@@ -240,14 +244,14 @@
     <!-- Agrega más secciones según sea necesario -->
  
 <footer>
-<div class="redes">
+    <div class="redes">
      <!--insert social media link-->
         <p>Technology by Virtual Space LLC © 2024</p>
         <a href="#"><img src="#" alt=""></a>
-    <br>
-    <br>
+        <br>
+        <br>
     </div>
-    </footer>
+</footer>
 
     <script src="js/carruselIndex.js"></script>
 
@@ -261,7 +265,17 @@
     <button class="dark-mode-button" onclick="toggleDarkMode()"><i class="fas fa-moon" id="darkModeIcon"></i></button>
     
     <!--Cambiar Idioma-->
-    <input id="idioma" type="button" value="EN/ES" onclick="switchLanguage();"/>
+    <form>
+        <div>
+            <input name="Language" id="English" class="idioma" type="radio" value="English" onclick="switchLanguage();"/>
+                <label id="label_en" for="English"> EN </label>
+        </div>
+        
+        <div>
+            <input name="Language" id="Espanol" class="idioma" type="radio" value="Espanol" >
+                <label id="label_es" for="Espanol"> ES </label>
+        </div>
+    </form>
     
     <!--Logo-->
     <img src="images/Logo/LOGO-VS.png" id="logo">
