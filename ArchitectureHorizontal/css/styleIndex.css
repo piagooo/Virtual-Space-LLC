@@ -149,6 +149,24 @@ body.dark-mode {
 }
 
 @media screen and (max-width:2000px){
+    #label_en{
+        position: fixed; left: 85px; top: 60px;
+        color:white;
+        font-family: nunitobold; 
+    }
+    #label_es{
+        position: fixed; left: 85px; top: 85px;
+        color:white; 
+        font-family: nunitobold;
+    }
+    
+    #Espanol{
+        position: fixed; left: 65px; top: 85px;
+    }
+    #English{
+        position: fixed; left: 65px; top: 60px;
+    }
+
     #logo {
         width:50px;
         height:auto;
@@ -253,6 +271,24 @@ body.dark-mode {
 }
 
 @media only screen and (max-height:700px){
+    #label_en{
+        position: fixed; left: 80px; top: 70px;
+        color:white;
+        font-family: nunitobold; 
+    }
+    #label_es{
+        position: fixed; left: 80px; top: 95px;
+        color:white; 
+        font-family: nunitobold;
+    }
+    
+    #Espanol{
+        position: fixed; left: 50px; top: 95px;
+    }
+    #English{
+        position: fixed; left: 50px; top: 70px;
+    }
+
     #logo {
         width:50px;
         height:auto;

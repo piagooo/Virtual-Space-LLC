@@ -37,7 +37,7 @@
                </div>
        
                <!--English Caption - Sample-->
-               <div class="caption caption_ingles" id="Ingles1">
+               <div class="caption caption_en" id="Ingles1">
                    <h4>
                        Lorem
                    </h4>
@@ -48,7 +48,7 @@
                </div>
        
                <!--Spanish Caption-->
-               <div onclick="mobileCaption()" class="caption caption_espanol" id="Espanol1">
+               <div onclick="mobileCaption()" class="caption caption_es" id="Espanol1">
                    <h4>
                        Espanol
                    </h4>
@@ -83,7 +83,7 @@
                     </button>
                 </div>
                 <!--English Caption-->
-                <div ontouchstart="mobileCaption()" class="caption caption_ingles" id="Ingles2">
+                <div ontouchstart="mobileCaption()" class="caption caption_en" id="Ingles2">
                     <h4>
                         Ipsum
                     </h4>
@@ -93,7 +93,7 @@
                     <a href="section/section2.html">Read more...</a>
                 </div>
                 <!--Spanish Cpation-->
-                <div ontouchstart="mobileCaption()" class="caption caption_espanol" id="Espanol2">
+                <div ontouchstart="mobileCaption()" class="caption caption_es" id="Espanol2">
                     <h4>
                         Espanol
                     </h4>
@@ -141,7 +141,7 @@
 
 
                 <!--English Caption-->
-                <div ontouchstart="mobileCaption()" class="caption caption_ingles" id="Ingles3">
+                <div ontouchstart="mobileCaption()" class="caption caption_en" id="Ingles3">
                     <h4>
                         Dolor
                     </h4>
@@ -151,7 +151,7 @@
                     <a href="section/section3.html">Read more...</a>
                 </div>
                 <!--Spanish Caption-->
-                <div ontouchstart="mobileCaption()" class="caption caption_espanol" id="Espanol3">
+                <div ontouchstart="mobileCaption()" class="caption caption_es" id="Espanol3">
                     <h4>
                         Espanol
                     </h4>
@@ -213,7 +213,7 @@
                 </div>
 
                 <!--English Caption-->
-                <div ontouchstart="mobileCaption()" class="caption caption_ingles" id="Ingles4">
+                <div ontouchstart="mobileCaption()" class="caption caption_en" id="Ingles4">
                     <h4>
                         Dolor
                     </h4>
@@ -224,7 +224,7 @@
                 </div>
 
                 <!--Spanish Caption-->
-                <div ontouchstart="mobileCaption()" class="caption caption_espanol" id="Espanol4">
+                <div ontouchstart="mobileCaption()" class="caption caption_es" id="Espanol4">
                     <h4>
                         Espanol
                     </h4>
@@ -285,11 +285,43 @@
     <!-- Botón Dark Mode -->
     <button class="dark-mode-button" onclick="toggleDarkMode()"><i class="fas fa-moon" id="darkModeIcon"></i></button>
     
-    <!--Cambiar Idioma-->
-    <input id="idioma" type="button" value="EN/ES" onclick="switchLanguage()"/>
+  <!--Cambiar Idioma-->
     
+    <form>
+        <div>
+            <input name="Language" id="English" class="idioma" type="radio" value="English" onclick="englishLang()" />
+                <label id="label_en" for="English"> EN </label>
+        </div>
+        
+        <div>
+            <input name="Language" id="Espanol" class="idioma" type="radio" value="Espanol" onclick="spanishLang()" checked/>
+                <label id="label_es" for="Espanol"> ES </label>
+        </div>
+    </form>
+
+    <div id="language-box"></div>
+
     <!--Logo-->
     <img src="images/Logo/LOGO-VS.png" id="logo">
 
+
+    <script>
+    var es = document.getElementsByClassName('caption_es');
+    var en = document.getElementsByClassName('caption_en');
+
+    function englishLang(){
+        for (let i = 0; i < es.length; i++){
+            en[i].style.display = 'block';
+            es[i].style.display = 'none';
+        }
+    }
+
+    function spanishLang(){
+        for (let i = 0; i < es.length; i++){
+            es[i].style.display = 'block';
+            en[i].style.display = 'none';
+        }
+    }
+    </script>
 
 </html>
