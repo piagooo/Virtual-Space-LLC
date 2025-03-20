@@ -149,23 +149,6 @@ body.dark-mode {
 }
 
 @media screen and (max-width:2000px){
-    #label_en{
-        position: fixed; left: 185px; top: 70px;
-        color:white;
-        font-family: nunitobold; 
-    }
-    #label_es{
-        position: fixed; left: 185px; top: 95px;
-        color:white; 
-        font-family: nunitobold;
-    }
-    
-    #Espanol{
-        position: fixed; left: 155px; top: 95px;
-    }
-    #English{
-        position: fixed; left: 155px; top: 70px;
-    }
 
     #logo {
         width:50px;
@@ -265,29 +248,29 @@ body.dark-mode {
     #mobileFooter{
         display:none;
     }
+    #label_en{
+        position: fixed; left: 185px; top: 70px;
+        color:white;
+        font-family: nunitobold; 
+    }
+    #label_es{
+        position: fixed; left: 185px; top: 95px;
+        color:white; 
+        font-family: nunitobold;
+    }
+    
+    #Espanol{
+        position: fixed; left: 155px; top: 95px;
+    }
+    #English{
+        position: fixed; left: 155px; top: 70px;
+    }
 
    
 
 }
 
 @media only screen and (max-height:700px){
-    #label_en{
-        position: fixed; left: 80px; top: 70px;
-        color:white;
-        font-family: nunitobold; 
-    }
-    #label_es{
-        position: fixed; left: 80px; top: 95px;
-        color:white; 
-        font-family: nunitobold;
-    }
-    
-    #Espanol{
-        position: fixed; left: 50px; top: 95px;
-    }
-    #English{
-        position: fixed; left: 50px; top: 70px;
-    }
 
     #logo {
         width:50px;
@@ -415,6 +398,25 @@ body.dark-mode {
         height: 80vh;
         object-fit: cover;
     }
+
+    #label_en{
+        position: fixed; left: 80px; top: 70px;
+        color:white;
+        font-family: nunitobold; 
+    }
+    #label_es{
+        position: fixed; left: 80px; top: 95px;
+        color:white; 
+        font-family: nunitobold;
+    }
+    
+    #Espanol{
+        position: fixed; left: 50px; top: 95px;
+    }
+    #English{
+        position: fixed; left: 50px; top: 70px;
+    }
+
 
 
 }
