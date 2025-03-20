@@ -38,10 +38,6 @@ function toggleDarkMode() {
     darkModeIcon.classList.toggle('fa-sun');
 }
 
-function toggleLanguage(){
-
-
-}
 
 //Switches main picture when you click on icons in carousel
 function switchImage(imgID, biggerPicture){
@@ -65,7 +61,7 @@ function removeLoading(){
 
 
 //Display caption on mobile view
-function mobileCaption(){
+function mobileCaption(caption){
     const opac = document.getElementById(caption).style.opacity;
     if(opac == '65%'){
         opac = '0%';
@@ -74,6 +70,7 @@ function mobileCaption(){
         opac = '65%';
     }
 }
+
 
 
 // Switches languages
@@ -99,6 +96,8 @@ function switchLanguage() {
      
 }
 
+
+
   
 
 function togglePlayPause(sound,button,icon) {
@@ -120,3 +119,4 @@ function togglePlayPause(sound,button,icon) {
       });
 
 }
+
