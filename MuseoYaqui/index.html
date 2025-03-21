@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo de los Yaquis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="css/styleIndex.css">
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+   <script src="js/carruselIndex.js"></script>
+</head>
+
+
+
+<body>
+    
+    <div id="navbar">
+        <div class="logo">
+            <img src="images/LOGO-VS.png" alt="logo">
+        </div>
+    </div>
+    
+    <audio id="myAudio" src="grandma Cahita song indian song.wav"></audio>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playPauseIcon = document.getElementById('playPauseIcon');
+
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.play();
+        playPauseIcon.className = 'fas fa-pause';
+      } else {
+        audio.pause();
+        playPauseIcon.className = 'fas fa-play';
+      }
+    }
+
+    audio.addEventListener('ended', () => {
+      playPauseIcon.className = 'fas fa-play';
+    });
+  </script>
+  <!--End audio-->
+  
+
+    <!-- Seccion 1 -->
+    <div class="section" id="section1ps" onmouseover="displayCaption(caption1)" onmouseout="hideCaption(caption1)">
+        <div class="caption" id="caption1">
+            <h4>
+                Museo de los yaquis​
+            </h4>
+            <p>
+                Located in Cocorit, Sonora, just north of the Ciudad Obregon, Museo de los Yaquis is dedicated to telling the Story of the Yaqui​. <br> Address: Gral. Álvaro Obregón 203, Centro, 85000 Ejido del Centro, Son., Mexico​
+            </p>
+        </div>
+
+        <img id="big-picture" src="images/S1/Y1.JPG" alt="Imagen 1">
+    </div>
+    <div class="owl-carousel">
+        <div class="item" onclick="switchImage('images/S1/Y1.1.JPG','big-picture')">
+            <img src="images/S1/Y1.1.JPG" alt="Icono 1">
+        </div>
+        <div class="item" onclick="switchImage('images/S1/Y1.2.JPG','big-picture')">
+            <img src="images/S1/Y1.2.JPG" alt="Icono 2">
+        </div>
+        <div class="item" onclick="switchImage('images/S1/Y1.3.jpg','big-picture')">
+            <img src="images/S1/Y1.3.jpg" alt="Icono 3">
+        </div>
+        <div class="item" onclick="switchImage('images/S1/Y1.jpg','big-picture')">
+            <img src="images/S1/Y1.jpg" alt="Icono 4">
+        </div>
+    </div>
+
+    <!-- End seccion 1 -->
+
+    <!-- Seccion 2 -->
+    <div class="section" id="section2ps">
+        <div class="caption" id="caption2">
+            <h4>
+                Cosmología
+            </h4>
+            <p>
+                The 1st room of the Museo de los Yaquis is dedicated to Yaqui cosmology and how they came to be​. 
+            </p>
+        </div>
+        <img id = "big-picture2" src="images/S2/Y2.jpg" alt="Imagen 2">
+    </div>
+    <div class="owl-carousel">
+        <div class="item" onclick="switchImage('images/S2/Y2.1.jpg','big-picture2')">
+            <img src="images/S2/Y2.1.jpg" alt="Icono 3">
+        </div>
+        <div class="item" onclick="switchImage('images/S2/Y2.2.jpg','big-picture2')">
+            <img src="images/S2/Y2.2.jpg" alt="Icono 4">
+        </div>
+        <div class="item" onclick="switchImage('images/S2/Y2.3.jpg','big-picture2')">
+            <img src="images/S2/Y2.3.jpg" alt="Icono 5">
+        </div>
+        <div class="item" onclick="switchImage('images/S2/Y2.jpg','big-picture2')">
+            <img src="images/S2/Y2.jpg" alt="Imagen 2">
+        </div>
+    </div>
+
+    <!-- End seccion 2 -->
+
+    <!-- Seccion 3 -->
+        <div class="section" id="section3ps">
+            <div class="caption" id="caption3">
+                <h4>
+                    Danzas
+                </h4>
+                <p>
+                    Throughout the Year the Yaquis have a variety of different dances during their festivals, Some of the most popular is the Deer Dancer and Pascola.
+                </p>
+            </div>
+            <img id ="big-picture3" src="images/S3/Y3.jpg" alt="Imagen 2">
+        </div>
+        <div class="owl-carousel">
+            <div class="item" onclick="switchImage('images/S3/Y3.1.JPG','big-picture3')">
+                <img src="images/S3/Y3.1.jpg" alt="Icono 3">
+            </div>
+            <div class="item" onclick="switchImage('images/S3/Y3.2.JPG','big-picture3')">
+                <img src="images/S3/Y3.2.jpg" alt="Icono 3">
+            </div>
+            <div class="item" onclick="switchImage('images/S3/Y3.3.JPG','big-picture3')">
+                <img src="images/S3/Y3.3.jpg" alt="Icono 3">
+            </div>
+            <div class="item" onclick="switchImage('images/S3/Y3.JPG','big-picture3')">
+                <img src="images/S3/Y3.jpg" alt="Icono 3">
+            </div>
+        </div>
+     <!-- End seccion 3 -->
+
+         <!-- Seccion 4 -->
+         <div class="section" id="section4ps">
+            <div class="caption" id="caption4">
+                <h4>
+                    Instrumentos
+                </h4>
+                <p>
+                    Instruments play an important role to provide music for the Yaqui dances.
+                </p>
+            </div>
+            <img id ="big-picture4" src="images/S4/Y4.jpg" alt="Imagen 2">
+        </div>
+
+        <div class="owl-carousel">
+              
+            <div class="item" onclick="switchImage('images/S4/Y4.1.JPG','big-picture4')">
+                <img src="images/S4/Y4.1.jpg" alt="Icono 1">
+            </div>
+            <div class="item" onclick="switchImage('images/S4/Y4.2.JPG','big-picture4')">
+                <img src="images/S4/Y4.2.jpg" alt="Icono 2">
+            </div>
+            <div class="item" onclick="switchImage('images/S4/Y4.3.JPG','big-picture4')">
+                <img src="images/S4/Y4.3.jpg" alt="Icono 3">
+            </div>
+            <div class="item" onclick="switchImage('images/S4/Y4.JPG','big-picture4')">
+                <img src="images/S4/Y4.jpg" alt="Icono 4">
+            </div>
+        </div>
+     <!-- End seccion 4 -->
+
+        <!-- Seccion 5 -->
+        <div class="section"  id="section5ps">
+            <div class="caption" id="caption5">
+                <h4>
+                    Exposiciones
+                </h4>
+                <p>
+                    This Museums provides multiple exhibit to drive you right into Yaqui culture and history    
+                </p> 
+            </div>
+            <img id ="big-picture5" src="images/S5/Y5.jpg" alt="Imagen 2">
+        </div>
+        <div class="owl-carousel">
+            <div class="item" onclick="switchImage('images/S5/Y5.1.JPG','big-picture5')">
+                <img src="images/S5/Y5.1.jpg" alt="Icono 1">
+            </div>
+            <div class="item" onclick="switchImage('images/S5/Y5.2.JPG','big-picture5')">
+                <img src="images/S5/Y5.2.jpg" alt="Icono 2">
+            </div>
+            <div class="item" onclick="switchImage('images/S5/Y5.3.JPG','big-picture5')">
+                <img src="images/S5/Y5.3.jpg" alt="Icono 3">
+            </div>
+        </div>
+    
+     <!-- End seccion 5 -->
+     <!--SECCION LOGO-->
+
+ 
+
+    <!-- Agrega más secciones según sea necesario -->
+ 
+    <script>
+        function goToLocalPage(page) {
+            window.location.href = page;
+        }
+    </script>
+    
+    <footer>
+        <h1></h1>
+        <div class="redes">
+          <!--insert social media link-->
+
+          <a href="#"><img src="#" alt=""></a>
+          
+
+
+        </div>
+        <p>Technology by Virtual Space LLC © 2024</p>
+      </footer>
+
+</body>
+
+    
+
+
+    <!--Audio-->
+    <div class="audio-container">
+        <button class="audiobtn" id="playPauseBtn" onclick="togglePlayPause()">
+        <i id="playPauseIcon" class="fas fa-play"></i>
+        </button>
+    </div>
+    <!-- Botón Dark Mode -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()"><i class="fas fa-moon" id="darkModeIcon"></i></button>
+
+
+
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.seccion1 {
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.seccion1 img {
+    width: 100%;
+    height: 85vh;
+    max-height: 650px;
+    object-fit: cover;
+    border-radius: 5px;
+
+    order: 1;
+}
+
+.descripcion {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    order: 2;
+}
+
+.descripcion h2 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.botones {
+    width: 30%;
+    padding: 13px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    order: 3;
+    margin-top: -25px;
+}
+
+.botones button {
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 18px; /* Tamaño del icono */
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.play-icon{
+    color: #858585;
+    background: none;
+}
+
+.boton-enlace {
+    color: #858585;
+    background: none;
+}
+
+.boton-red-social {
+
+background-color: #3B5998;
+color: white;
+}
+.toggle-descripcion{
+background-color: transparent;
+color: #858585;
+text-align: center;
+cursor: pointer;
+border: none;
+font-size: 20px;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+.toggle-descripcion:hover {
+color: #ccc;
+}
+
+#cerrarPagina {
+    position: fixed;
+    top: 20px;
+    left: 13px;
+    cursor: pointer;
+    background: none;
+    color: #858585;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    transition: color 0.3s ease;
+    border-radius: 50%;
+}
+#cerrarPagina:hover{
+    background: #919191;
+}        
+
+
+.oculto {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .seccion1{
+        width: 80%;
+    }
+    .linea2{
+        width: 80%;
+    }
+    .descripcion,
+    .botones {
+        width: 100%;
+        order: 2;
+    }
+}
