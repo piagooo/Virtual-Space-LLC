@@ -22,7 +22,7 @@ body {
 
 }
 
-footer{
+footer, .footer {
     width: 100%;
     background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
     height: auto;
@@ -33,7 +33,7 @@ footer{
     height: 35px;
 }
 
-footer p{
+footer p, .footer p {
     text-align: center;
     font-size: 10px;
     color: #fff;
@@ -231,11 +231,15 @@ body.dark-mode {
         position: fixed; left: 185px; top: 70px;
         color:white;
         font-family: nunitobold; 
+	background-color: #000;
+	opacity: 0.5;
     }
     #label_es{
         position: fixed; left: 185px; top: 95px;
         color:white; 
         font-family: nunitobold;
+	background-color: #000;
+	opacity: 0.5;
     }
     
     #Espanol{
@@ -391,11 +395,15 @@ body.dark-mode {
         position: fixed; left: 80px; top: 70px;
         color:white;
         font-family: nunitobold; 
+	background-color: #000;
+	opacity: 0.5;
     }
     #label_es{
         position: fixed; left: 80px; top: 95px;
         color:white; 
         font-family: nunitobold;
+	background-color: #000;
+	opacity: 0.5;
     }
     
     #Espanol{
