@@ -324,7 +324,7 @@ html{
     color:#fff;
 }
 
-footer{
+footer, .footer {
     width: 100%;
     background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
     height: auto;
@@ -334,15 +334,15 @@ footer{
     bottom: 0px;
 }
 
-footer h1
-  {
+footer h1, .footer h1  {
     padding: 5px;
     text-align: center;
     font-size: 10px;
     color: #fff;
     font-family:nunito;
 }
-footer p{
+	
+footer p, .footer p {
     text-align: center;
     font-size: 10px;
     color: #fff;
