@@ -459,7 +459,7 @@ body.dark-mode {
 }
 
 
-a:link {
+a:link, a:visited {
     color:rgb(0, 136, 255);
     background-color: none;
 }
