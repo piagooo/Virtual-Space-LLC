@@ -65,12 +65,6 @@ body.dark-mode {
     display:block;
 }
 
-
-    
-
-
-
-
 #loadingScreen{
     background-color: #0b033e;
     position: fixed; top: 0;
@@ -229,16 +223,16 @@ body.dark-mode {
     
     #label_en{
         position: fixed; left: 185px; top: 70px;
-        color:white;
+        color: #000;
+        background-color: #fff;
         font-family: nunitobold; 
-	background-color: #000;
 	opacity: 0.5;
     }
     #label_es{
         position: fixed; left: 185px; top: 95px;
-        color:white; 
+        color: #000;
+        background-color: #fff;
         font-family: nunitobold;
-	background-color: #000;
 	opacity: 0.5;
     }
     
