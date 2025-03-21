@@ -266,6 +266,17 @@ body.dark-mode {
         position: fixed; left: 155px; top: 70px;
     }
 
+    .audiobtn {
+        position: absolute; top: 45px; right: 5px;
+        padding: 10px;
+        background-color: transparent;
+        color: #858585;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
    
 
 }
@@ -367,14 +378,6 @@ body.dark-mode {
         padding: 10px;
     }
 
-
-    #desktopFooter{
-        display:none;
-    }
-    #mobileFooter{
-        display:block;
-    }
-
     .section_hz{
         position: relative; 
         width: 80%;
@@ -417,6 +420,17 @@ body.dark-mode {
         position: fixed; left: 50px; top: 70px;
     }
 
+    .audiobtn {
+        position: absolute; top: 5px; right: 5px;
+        padding: 10px;
+        background-color: transparent;
+        color: #858585;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+    }
 
 
 }
@@ -431,19 +445,6 @@ body.dark-mode {
     text-align: center;
   }
 
-.audiobtn {
-    position: absolute;
-    top: 25px;
-    right: 5px;
-    padding: 10px;
-    background-color: transparent;
-    color: #858585;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    font-size: 20px;
-    transition: color 0.3s ease;
-}
 #playPauseIcon{
     color:#999;
 }
