@@ -54,12 +54,16 @@ body.dark-mode {
 #logo {
     width:60px;
     height:auto;
-    padding: 0px;
-    padding-top: 5px;
-    padding-bottom: 15px;
-    position: fixed; left: 50%; top: 5px;
 }
 
+
+
+.logo{
+    background-color: transparent;
+    width: 100%;
+    position: fixed; top: 5px;
+    text-align: center;
+}
 
 
 .dark-mode-button {
