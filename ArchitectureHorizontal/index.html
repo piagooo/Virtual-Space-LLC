@@ -48,7 +48,7 @@
                </div>
        
                <!--Spanish Caption-->
-               <div onclick="mobileCaption()" class="caption caption_es" id="Espanol1">
+               <div onclick="mobileCaption();" class="caption caption_es" id="Espanol1">
                    <h4>
                        Espanol
                    </h4>
@@ -250,17 +250,10 @@
 
     </div>
 
-    <div class="footer" id="mobileFooter">
-        <div class="redes">
-             <!--insert social media link-->
-                <p>Technology by Virtual Space LLC © 2024</p>
-                <a href="#"><img src="#" alt=""></a>
-                <br>
-                <br>
-            </div>
-        </div>
+
     
-    <div class="footer" id="desktopFooter">
+
+    <footer id="desktopFooter">
         <div class="redes">
              <!--insert social media link-->
                 <p>Technology by Virtual Space LLC © 2024</p>
@@ -268,7 +261,10 @@
                 <br>
                 <br>
             </div>
-        </div>    
+    </footer>
+ 
+    
+    
     
 
     <script src="js/carruselIndex.js"></script>
@@ -303,22 +299,22 @@
 
 
     <script>
-    var es = document.getElementsByClassName('caption_es');
-    var en = document.getElementsByClassName('caption_en');
+        var es = document.getElementsByClassName('caption_es');
+        var en = document.getElementsByClassName('caption_en');
 
-    function englishLang(){
-        for (let i = 0; i < es.length; i++){
-            en[i].style.display = 'block';
-            es[i].style.display = 'none';
+        function englishLang(){
+            for (let i = 0; i < es.length; i++){
+                en[i].style.display = 'block';
+                es[i].style.display = 'none';
+            }
         }
-    }
 
-    function spanishLang(){
-        for (let i = 0; i < es.length; i++){
-            es[i].style.display = 'block';
-            en[i].style.display = 'none';
+        function spanishLang(){
+            for (let i = 0; i < es.length; i++){
+                es[i].style.display = 'block';
+                en[i].style.display = 'none';
+            }
         }
-    }
     </script>
 
 </html>
