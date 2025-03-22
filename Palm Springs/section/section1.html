@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Springs</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="../js/carruselIndex.js"></script>
+    <script src="../js/modal.js"></script>
+
+</head>
+
+<body>
+
+<br>
+<br>
+  
+    <!-- Botón Dark Mode -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()"><i class="fas fa-moon" id="darkModeIcon"></i></button>
+
+    <button id="cerrarPagina" onclick="cerrarPagina()">x</button>
+
+<!--imagen1 -->
+
+<div class="seccion1" >
+        <img id="myImg" src="../images/S1/PM1.1.jpg" alt="Imagen 1">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+
+        <img id="myImg" src="../images/S1/PM1.2.jpg" alt="Imagen 2">
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+        </div>
+
+    <div class="linea2" id="imagen2section1"></div>
+
+<!--fin imagen2 -->
+
+<div class="seccion1" >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+</div>
+
+<div class="linea2" id="imagen3section1"></div>
+
+<!--imagen3 -->
+    <div class="seccion1" >
+        <img src="../images/S1/PM1.3.jpg" alt="Imagen 3">
+            <img src="../images/S1/PM1.4.jpg" alt="Imagen 2">
+            </div>
+        </div>
+
+    <!--fin imagen4 -->
+
+    <!-- Footer -->
+        <div class="footer">
+            <br>
+            <br>
+            <p>©Copyright 2024 VS All Rights Reserved</p>
+            <br>
+            <br>
+        </div>
+    <!-- End Footer -->
+
+    <!-- Agrega más secciones según sea necesario -->
+
+    <script>
+        function cerrarPagina() {
+            // Cambia 'otraPagina.html' con la ruta correcta de tu otra página
+            window.location.href = '../index.html#section1ps';
+        }
+        function abrirEnlace(url) {
+            window.open(url, '_blank');
+        }
+
+        function abrirRedSocial(url) {
+            window.open(url, '_blank');
+        }
+
+        function toggleDescripcion(idParrafo, idIcono) {
+            var parrafo = document.getElementById(idParrafo);
+            var icono = document.getElementById(idIcono);
+
+            parrafo.classList.toggle('oculto');
+
+            if (parrafo.classList.contains('oculto')) {
+                icono.classList.remove('fas fa-chevron-down');
+                icono.classList.add('fas fa-chevron-up');
+            } else {
+                icono.classList.remove('fas fa-chevron-up');
+                icono.classList.add('fas fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1d1d1d;
+    color: #fcfcfc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color:rgb(0, 136, 255);
+    background-color: none;
+}
+
+a:hover {
+  color:rgb(0, 6, 121);
+}
+
+body.dark-mode {
+    background-color: #ffffff;
+    color: #1d1d1d;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  clear: both;
+  position: sticky;
+  background: linear-gradient(rgb(0, 6, 121) 0%, rgb(1, 4, 64) 47%, rgb(1, 4, 65) 100%);
+  margin: 0px auto;
+  color: #fcfcfc;
+}
+
+.section {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.section img {
+    width: 80%;
+    height: 80vh;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Show text when hovering over the image */
+.section-wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.section-wrapper:hover .image {
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 100px;
+    width: 80px;
+    margin-bottom: 50px;
+}
+
+.logo img {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.post-container {
+    width: 80%;
+    max-width: 1100px;
+    padding: 20px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    max-height: 30px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+
+.linea {
+    max-width: 1100px;
+    width: 80%;
+    height: 10px;
+    border-top: 1px solid #999;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.linea2 {
+    max-width: 1100px;
+    width: 80%;
+    height: 10px;
+    border-top: 2px solid rgb(0, 6, 121);
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.post-container.expanded {
+    max-height: none;
+}
+
+.toggle-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    background-color: transparent;
+    color: #858585;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+    color: #ccc;
+}
+
+.dark-mode-button {
+    position: absolute;
+    top: 20px;
+    right: 7px;
+    padding: 10px;
+    background-color: transparent;
+    color: #858585;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-button:hover {
+    color: #ccc;
+}
+
+/* Nueva regla CSS para cambiar el color del icono */
+.dark-mode .dark-mode-button i.fa-moon {
+    color: black;
+}
+
+.dark-mode .dark-mode-button i.fa-sun {
+    color: #1d1d1d;
+}
+
+.dark-mode .audio-container #playPauseIcon {
+    color: #1d1d1d;
+}
+
+/*Boton audio*/
+
+.audio-container {
+    text-align: center;
+  }
+
+ .audiobtn {
+position: absolute;
+top: 20px;
+right: 40px;
+padding: 10px;
+background-color: transparent;
+color: #858585;
+text-align: center;
+cursor: pointer;
+border: none;
+font-size: 20px;
+transition: color 0.3s ease;
+  }
+
+  #playPauseIcon{
+    color:#999;
+  }
+  
+  #playPauseIcon:hover {
+  color: #ccc;
+}
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+/* Position the "prev button" to the right */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .row {
+    text-align: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Columns side by side */
+  .column {
+    float: left;
+    width: 16%;
+    padding: 5px;
+    margin-left: 15px;
+  }
+
+  .column img {
+    height: 20vh;
+    border-radius: 5px;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

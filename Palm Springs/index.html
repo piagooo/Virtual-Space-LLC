@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palm Springs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="css/styleIndex.css">
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+   <script src="js/carruselIndex.js"></script>
+</head>
+<body>
+
+<!--SECCION LOGO-->
+ <div class="logo">
+    <a href="index.html"><img src="images/LOGO-VS.png" alt=""></a>
+</div>
+
+<!--Audio-->
+<div class="audio-container">
+    <audio id="myAudio" src="palmAudio.mp3"></audio>
+    <button class="audiobtn" id="playPauseBtn" onclick="togglePlayPause()">
+      <i id="playPauseIcon" class="fas fa-play"></i>
+    </button>
+  </div>
+
+  <script>
+    const audio = document.getElementById('myAudio');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const playPauseIcon = document.getElementById('playPauseIcon');
+
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.play();
+        playPauseIcon.className = 'fas fa-pause';
+      } else {
+        audio.pause();
+        playPauseIcon.className = 'fas fa-play';
+      }
+    }
+
+    audio.addEventListener('ended', () => {
+      playPauseIcon.className = 'fas fa-play';
+    });
+  </script>
+  <!--End audio-->
+  
+    <!-- Botón Dark Mode -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()"><i class="fas fa-moon" id="darkModeIcon"></i></button>
+
+    <!-- Seccion 1 -->
+    <div class="section">
+        <div class="section-wrapper">
+        <div class="mySlides fade">
+          <img src="images/S1/PM1.jpg" style="width:100%">
+          <div class="overlay">
+            <h4>
+                Visitors Center
+            </h4>
+            <p>
+                Coming into Palm is the Visitors center which used to be Albert Frey’s 
+                Tramway gas station, This former gas station has been the Official Palm Springs 
+                Visitor Information Center. Visitors can get information where to stay, shop and eat in Palm Springs. 
+                <br>
+                Address: 2901 North Palm Canyon Drive
+                <br>
+                Palm Springs, CA 92262.
+                <br>
+                <a href="/section/section1.html">Read more...</a>
+            </p>
+        </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/S2/PM2.1.jpg" style="width:100%">
+          <div class="overlay">
+            <h4>
+                Palm Springs Aerial Tramway
+            </h4>
+                <p>Visitors can take a ride up to San Jacinto Peak on the world’s largest rotating aerial tramway.
+                <br>
+                Address: 1 Tramway Rd, Palm Springs, CA 92262​
+                <br>
+                <a href="/section/section2.html">Read more...</a>
+            </p>
+        </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/S3/PM3.jpg" style="width:100%">
+          <div class="overlay">
+            <h4>
+                Palm Springs Museums
+            </h4>
+            <p>
+                Visit the museums of Palm Springs
+                <br>
+                The Palm Springs Art Museum Address: 101 N Museum Dr, Palm Springs, CA 92262
+                <br>
+                <a href="/section/section3.html">Read more...</a>
+            </p>
+        </div>
+        </div>
+          
+        <div class="mySlides fade">
+          <img src="images/S4/PM4.jpg" style="width:100%">
+          <div class="overlay">
+            <h4>
+                Palm Springs Downtown
+            </h4>
+            <p>
+                Take a stroll down Palm Canyon Dr. enjoy the sights, shopping and various food options.
+                <br>
+                <a href="/section/section4.html">Read more...</a>
+            </p>
+        </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/S5/PM5.jpg" style="width:100%">
+          <div class="overlay">
+            <h4>
+                Palm Springs Recreational
+            </h4>
+            <p>
+                Get active and take a hike in the various trails at the Indian Canyons or play 18 at the local Golf course or travel out to Joshua National Tree park 
+                <br>
+                <a href="/section/section5.html">Read more...</a>
+            </p>
+        </div>
+        </div>
+      
+      <div class="row" style="text-align:center">
+          <div class="column">
+            <img class="demo cursor" src="images/S1/PM1.jpg" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/S2/PM2.1.jpg" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/S3/PM3.jpg" onclick="currentSlide(3)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/S4/PM4.jpg" onclick="currentSlide(4)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/S5/PM5.jpg" onclick="currentSlide(5)">
+          </div>
+        </div>
+      </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<div class="linea"></div>
+ <!-- End seccion 1 -->
+
+<!-- Footer -->
+    <div class="footer">
+    <br>
+    <br>
+    <p>©Copyright 2024 VS All Rights Reserved</p>
+    <br>
+    <br>
+    </div>
+        <!-- End Footer -->
+
+    <!-- Agrega más secciones según sea necesario -->
+ 
+    <script>
+        function goToLocalPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+    <script src="js/imageover.js"></script>
+    <script src="js/slideshow.js"></script>
+    
+</body>
+</html>
